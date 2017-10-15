@@ -1,0 +1,14 @@
+<body>
+  <h1>
+    The team is <%= @team_name.name %>
+  </h1>
+
+  <ul>
+    <% @team_name.players.each do |player| %>
+      <li><%= player.name %> : <%= player.position %></li>
+    <% end %>
+  </ul>
+
+
+  <a href="/teams">All teams</a>
+</body>
